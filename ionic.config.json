@@ -1,0 +1,7 @@
+{
+  "name": "Cripto-Doc-RD",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
