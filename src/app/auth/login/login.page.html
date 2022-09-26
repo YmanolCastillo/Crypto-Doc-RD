@@ -1,0 +1,65 @@
+<ion-content>
+  <div class="container mt-8 mx-auto flex">
+    <div class="max-w-md w-full mx-auto align-middle">
+      <div class="">
+        <img
+          class="w-96 items-center justify-center"
+          src="../../../assets/img/CrpytoLogo.png"
+          alt="Logo CryptoDoc"
+        />
+
+        <h2 class="text-center text-3xl font-extrabold text-gray-900">
+          !Bienvenido a CriptoDoc!
+        </h2>
+      </div>
+
+      <div class="p-4 -mt-4">
+        <form>
+          <div class="mb-3">
+            <label
+              for="email"
+              class="block mb-2 text-base font-bold text-gray-600"
+              >Correo Electrónico
+            </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo Electrónico"
+              class="block w-full p-3 rounded-full bg-gray-200 border border-transparent focus:outline-none focus:ring-0 focus:border-transparent"
+            />
+          </div>
+          <div class="mb-3">
+            <label
+              for="password"
+              class="block mb-2 text-base font-bold text-gray-600"
+              >Contraseña
+            </label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              class="block w-full p-3 rounded-full bg-gray-200 border border-transparent focus:outline-none focus:ring-0 focus:border-transparent"
+            />
+
+            <p class="mt-2 text-right font-medium text-md text-gray-600">
+              <span> ¿Olvidaste tu contraseña? </span>
+            </p>
+          </div>
+
+          <button
+            [routerLink]="['/tabs/tab1']"
+            class="w-full p-3 mt-4 bg-blue-500 text-white font-bold rounded-full shadow uppercase"
+          >
+            Iniciar Sesión
+          </button>
+          <p
+            (click)="goToRegister()"
+            class="mt-2 text-center font-medium text-md text-gray-600"
+          >
+            <span> ¿No tienes cuenta? </span>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>
